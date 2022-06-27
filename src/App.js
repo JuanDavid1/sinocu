@@ -1,8 +1,9 @@
 
 import { useState } from 'react';
-import SubirArchivo from './SubirArchivo/SubirArchivo'
+import SubirArchivo from './SubirArchivo/SubirArchivo';
 import ListaArchivos from './ListaArchivos/ListaArchivos';
 import LoginForm from './components/LoginForm';
+import Mapa from './components/Mapa/Mapa';
 
 function App() {
 
@@ -53,6 +54,7 @@ function App() {
       <p className="title">Subir Archivos</p>
       <SubirArchivo files={files} setFiles={setFiles}></SubirArchivo>
       <ListaArchivos files={files} removeFile={removeFile}></ListaArchivos>
+      <Mapa></Mapa>
     </div>
   );
 }

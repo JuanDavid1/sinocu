@@ -5,6 +5,11 @@
   font-family: montserrat, sans-serif;
 }
 
+.map-container{
+  width: 100%;
+  height:  100hv;
+}
+
 input, button{
   appearance: noce;
   background: none;
