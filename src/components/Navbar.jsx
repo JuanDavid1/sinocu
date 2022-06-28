@@ -24,7 +24,7 @@ const Navbar = () => {
 
                 <Menu open={showMobileMenu}>
                     <MenuItem>
-                        <MenuItemLink>
+                        <MenuItemLink  onClick={()=>  setShowMobilemenu(!showMobileMenu) }>
                             <div>
                                 <AiOutlineHome/>
                                     HOME
@@ -32,16 +32,16 @@ const Navbar = () => {
                         </MenuItemLink>
                     </MenuItem>                
                     <MenuItem>
-                        <MenuItemLink>
+                        <MenuItemLink to="/SubirArchivo" onClick={()=>  setShowMobilemenu(!showMobileMenu) }>
                             <div>
                                 <AiOutlineHdd/>
-                                    Cargar Archivos
+                                 Cargar Archivos
                             </div>
                         </MenuItemLink>
                     </MenuItem>
                
                     <MenuItem>
-                        <MenuItemLink>
+                        <MenuItemLink to="/Mapa" onClick={()=>  setShowMobilemenu(!showMobileMenu) }>
                             <div>
                                 <AiOutlineFlag/>
                                 Api Google 
@@ -50,10 +50,10 @@ const Navbar = () => {
                     </MenuItem>
                 
                     <MenuItem>
-                        <MenuItemLink>
+                        <MenuItemLink onClick={()=>  setShowMobilemenu(!showMobileMenu) }>
                             <div>
                                 <AiOutlineCode/>
-                                Desarrolladores
+                                Desarrolladores 
                             </div>
                         </MenuItemLink>
                     </MenuItem>
@@ -65,13 +65,3 @@ const Navbar = () => {
 }
 
 export default Navbar
-
-
-
-
-
-
-
-
-
-

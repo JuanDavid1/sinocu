@@ -1,28 +1,29 @@
-.file-card{
-    background-color: #edf2f7;
-    border: 3px dashed #cbd5e0;
+.file-card {
     padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px dashed #cbd5e0;
+    background-color: #edf2f7;
     min-width: 380px;
     min-height: 230px;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-direction: column;
 
-    .file-inputs{
+    .file-inputs {
         position: relative;
-        margin-top: 1.5em;
+        margin-bottom: 1.5em;
 
-        input{
+        input {
             position: relative;
-            max-width: 200px;
-            height: 46px;
+            text-align: right;
+            opacity: 0;
             z-index: 2;
             cursor: pointer;
-            opacity: 0;
+            height: 46px;
+            max-width: 200px;
         }
 
-        button{
+        button {
             position: absolute;
             top: 0px;
             left: 0px;
@@ -40,10 +41,11 @@
             border-radius: 4px;
             border: none;
             outline: none;
-            transition: backgraund-color 0.4s;
+            // padding: 1em;
+            transition: background-color 0.4s;
             box-shadow: 0px 8px 24px rgba(149, 157, 165, 0.5);
 
-            i{
+            i {
                 width: 1.5em;
                 height: 1.5em;
                 padding: 0.4em;
@@ -58,19 +60,19 @@
             }
         }
 
-        &:hover{
-            bottom {
+        &:hover {
+            button {
                 background-color: #f15120;
             }
         }
     }
-
 }
 
-.main{
+.main {
     font-weight: bold;
-    margin-bottom: 0.4rem;
+    margin-bottom: 0.4em;
 }
-.info{
+
+.info {
     font-size: 0.8rem;
 }

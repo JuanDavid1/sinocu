@@ -32,10 +32,6 @@ export const LogoContainer = styled.div`
       color: #e07924;
     }
   }
-  svg {
-    fill: #e07924;
-    margin-right: 0.5rem;
-  }
 `;
 
 export const Menu = styled.ul`
